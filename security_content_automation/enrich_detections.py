@@ -236,6 +236,8 @@ def main():
                         [filepath.strip("security_content/")]
                     )
 
+                    
+                    
     # Generating detection_ta_mapping yml file
     try:
         with io.open(
