@@ -107,8 +107,8 @@ def main():
     ta_cim_field_reports_repo = "splunk/ta-cim-field-reports"
     ta_cim_field_reports_branch = "main"
 
-    # Decodin GITHUB_ACCESS_TOKEN from base64
-    git_token_base64_bytes = os.environ.get("GITHUB_ACCESS_TOKEN").encode('ascii')
+    # Decodin GIT_ACCESS_TOKEN from base64
+    git_token_base64_bytes = os.environ.get("GIT_ACCESS_TOKEN").encode('ascii')
     git_token_bytes = base64.b64decode(git_token_base64_bytes)
     github_token = git_token_bytes.decode('ascii') 
 
