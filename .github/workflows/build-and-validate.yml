@@ -52,6 +52,7 @@ jobs:
         env:
           GIT_ACCESS_TOKEN: ${{ secrets.GIT_ACCESS_TOKEN }}
         run: |
+          echo $GIT_ACCESS_TOKEN
           source venv/bin/activate
           python3 -m pip install -r security_content_automation/requirements.txt
           python3 security_content_automation/enrich_detections.py
