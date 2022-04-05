@@ -14,7 +14,7 @@ import git
 import yaml
 from github import Github
 
-FORMAT3 = ""
+FORMAT4 = ""
 TIMESTAMP_FORMAT = '%(asctime)s %(levelname)s - %(message)s'
 
 def fetch_ta_cim_mapping_report(file_name):
